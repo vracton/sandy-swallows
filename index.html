@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sandy Swallow Islands</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="sand-container">
+      <canvas id="sandCanvas"></canvas>
+      <canvas id="shoreCanvas"></canvas>
+      <div id="carveBox" class="hidden" aria-hidden="true"></div>
+      <div id="ui-grid">
+        <div class="ui-top">
+          <h1>The Sandy Swallow Islands</h1>
+          <p class="tagline">A reward awaits those who swallow...</p>
+        </div>
+        <div class="ui-center" aria-hidden="true"></div>
+        <div class="ui-bottom">
+          <div class="upload-row">
+            <div class="file-wrap">
+              <button class="file-btn" type="button">
+                <span class="file-label-text">Choose Image</span>
+                <input type="file" id="imageInput" accept="image/*" />
+              </button>
+            </div>
+            <span id="fileNameLabel" class="file-name">No file chosen</span>
+            <button id="startGameBtn" disabled>Start Carving</button>
+          </div>
+          <div id="revealProgress" class="tips"></div>
+          <div class="button-row-center">
+            <button id="saveImageBtn" class="hidden">Save Image</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
